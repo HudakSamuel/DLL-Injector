@@ -27,7 +27,7 @@ DWORD findPID(const WCHAR* procName) {
 
 BOOL InjectDLL(DWORD procID) {
 
-	LPCSTR dllPath = "D:\\Desktop\\RATdll.dll";
+	LPCSTR dllPath = "D:\\Desktop\\DLL.dll";
 
 	// vytvori HANDLE na process kde chceme vykonat injection
 	HANDLE procHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, procID);											// PROCESS_ALL_ACCESS - mozeme vytvarat thready, terminovat process atd...
